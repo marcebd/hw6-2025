@@ -63,9 +63,9 @@ document.getElementById("mute").addEventListener("click", function() {
 const volume = document.getElementById("volume");
 const sliderValue = document.getElementById("slider");
 sliderValue.addEventListener("input", (event) => {
-	volume.textContent = event.target.value;
+	volume.textContent = event.target.value + "%";
 	video.volume = event.target.value / 100;
-	console.log("Volume is " + video.volume);
+	console.log("Volume is " + video.volume + "%");
 });
 
 // Styled
